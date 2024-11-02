@@ -479,20 +479,22 @@ template {
 }
 
 @media (max-width: 767px) {
-  .main-page .main-text {
-    width: 90%;
+  .main-page {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .main-page .navigation {
+    column-gap: 5px;
+  }
+  .main-page .navigation .navigation-button {
+    font-size: 1.2em;
+    width: 80%;
   }
   .main-page .main-text .main-text-title {
-    font-size: 2em;
+    font-size: 1em;
   }
   .main-page .main-text .main-text-description {
     font-size: 0.9em;
-  }
-  .navigation {
-    column-gap: 5px;
-  }
-  .navigation .navigation-button {
-    font-size: 1.2em;
     width: 80%;
   }
   .about-me-page {
@@ -530,11 +532,6 @@ template {
     height: 70%;
   }
   .my-works-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
     max-width: 90%;
   }
   .my-works-page .my-works-title {

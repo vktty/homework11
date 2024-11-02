@@ -48,7 +48,7 @@ $main-color-2: #34547A;
         }
 
         .main-text {
-            
+
             .main-text-title {
                 font-size: 3em;
                 font-weight: 500;
@@ -208,28 +208,35 @@ $main-color-2: #34547A;
 
 @media (max-width: 767px) {
     .main-page {
+        max-width: 90%;
+        margin: 0 auto;
+        
+        .navigation {
+            column-gap: 5px;
+
+            .navigation-button {
+                font-size: 1.2em;
+                width: 80%;
+            }
+        }
 
         .main-text {
-            width: 90%;
 
             .main-text-title {
-                font-size: 2em;
+                font-size: 1em;
             }
 
             .main-text-description {
                 font-size: 0.9em;
+                width: 80%;
             }
         }
     }
 
-    .navigation {
-        column-gap: 5px;
 
-        .navigation-button {
-            font-size: 1.2em;
-            width: 80%;
-        }
-    }
+
+
+
 
 
     .about-me-page {
@@ -280,11 +287,6 @@ $main-color-2: #34547A;
 
 
     .my-works-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 100px;
         max-width: 90%;
 
         .my-works-title {
