@@ -309,7 +309,7 @@ template {
 
 @font-face {
   font-family: "roboto";
-  src: url(./fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 .wrapper {
   font-family: "roboto";
@@ -317,7 +317,7 @@ template {
 }
 
 .main-bg {
-  background: url(./images/1.png);
+  background: url(../images/1.png);
   padding-top: 80px;
   padding-bottom: 140px;
 }
