@@ -47,35 +47,40 @@ $main-color-2: #34547A;
             }
         }
 
-        .main-text-title {
-            font-size: 3em;
-            font-weight: 500;
-            margin-top: 162px;
-        }
+        .main-text {
+            
+            .main-text-title {
+                font-size: 3em;
+                font-weight: 500;
+                margin-top: 162px;
+            }
 
-        .main-text-description {
-            max-width: 540px;
-            color: $main-color-1;
-            margin-top: 60px;
-            line-height: 26px;
-        }
+            .main-text-description {
+                width: 60%;
+                color: $main-color-1;
+                margin-top: 60px;
+                line-height: 26px;
+            }
 
-        .main-button {
-            background: $main-color-2;
-            max-width: 226px;
-            max-height: 66px;
-            color: white;
-            margin-top: 65px;
-            padding-bottom: 142px;
-            text-align: center;
-            padding: 20px;
-            text-decoration: none;
+            .main-button {
+                background: $main-color-2;
+                max-width: 28%;
+                max-height: 10%;
+                color: white;
+                margin-top: 65px;
+                padding-bottom: 142px;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
 
-            &:hover {
-                text-decoration: underline;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
+
+
 }
 
 .about-me-page {
@@ -154,7 +159,7 @@ $main-color-2: #34547A;
         .my-works-text {
             color: $main-color-1;
             line-height: 26px;
-            width: 540px;
+            width: 60%;
             margin-top: 50px;
             margin-bottom: 57px;
         }
@@ -204,13 +209,8 @@ $main-color-2: #34547A;
 @media (max-width: 767px) {
     .main-page {
 
-        // margin: 0 auto;
-
         .main-text {
-            max-width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
+            width: 90%;
 
             .main-text-title {
                 font-size: 2em;
@@ -218,11 +218,6 @@ $main-color-2: #34547A;
 
             .main-text-description {
                 font-size: 0.9em;
-                width: 90%;
-            }
-
-            .main-button {
-                width: 90%;
             }
         }
     }
@@ -235,8 +230,6 @@ $main-color-2: #34547A;
             width: 80%;
         }
     }
-
-
 
 
     .about-me-page {
