@@ -1,0 +1,336 @@
+@import 'normalize';
+
+@font-face {
+    font-family: 'roboto';
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+$main-color-1: #727272;
+$main-color-2: #34547A;
+
+@mixin center-width() {
+    width: 890px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+.main-bg {
+    background: url(/images/1.png);
+    padding-top: 80px;
+    padding-bottom: 140px;
+
+    .main-page {
+        @include center-width;
+
+        .navigation {
+            display: flex;
+            justify-content: flex-start;
+            gap: 42px;
+            padding: 0;
+
+            .navigation-button {
+                list-style: none;
+                margin: 0;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        .main-text-title {
+            font-size: 3em;
+            font-weight: 500;
+            margin-top: 162px;
+        }
+
+        .main-text-description {
+            max-width: 540px;
+            color: $main-color-1;
+            margin-top: 60px;
+            line-height: 26px;
+        }
+
+        .main-button {
+            background: $main-color-2;
+            max-width: 226px;
+            max-height: 66px;
+            color: white;
+            margin-top: 65px;
+            padding-bottom: 142px;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.about-me-page {
+    @include center-width();
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-me-page-title {
+        margin-top: 112px;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .about-me-page-text {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        color: $main-color-1;
+        max-width: 540px;
+        line-height: 26px;
+    }
+}
+
+.icons-bg {
+    background: url(/images/2.png);
+
+    .icons-page {
+        @include center-width();
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+
+        .icons-items {
+            display: flex;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            .icons-text {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .icons-title {
+                    color: white;
+                    font-size: 1.3em;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+
+                .icons-under-title {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.my-works-bg {
+    background: url(/images/4.png);
+
+    .my-works-page {
+        @include center-width();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+
+        .my-works-title {
+            margin-top: 100px;
+            font-size: 2em;
+        }
+
+        .my-works-text {
+            color: $main-color-1;
+            line-height: 26px;
+            width: 540px;
+            margin-top: 50px;
+            margin-bottom: 57px;
+        }
+
+        .my-works-img {
+            width: 100%;
+            height: 600px;
+            background: url(/images/video.png);
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .my-works-play {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+.footer-bg {
+    background: url(/images/3.png);
+
+    .footer-page {
+        @include center-width();
+        height: 151px;
+
+        .footer-title {
+            font-size: 1.3em;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: white;
+            padding-top: 50px;
+        }
+
+        .footer-text {
+            margin-bottom: 50px;
+            font-size: 0.8em;
+            color: white;
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .main-page {
+
+        // margin: 0 auto;
+
+        .main-text {
+            max-width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .main-text-title {
+                font-size: 2em;
+            }
+
+            .main-text-description {
+                font-size: 0.9em;
+                width: 90%;
+            }
+
+            .main-button {
+                width: 90%;
+            }
+        }
+    }
+
+    .navigation {
+        column-gap: 5px;
+
+        .navigation-button {
+            font-size: 1.2em;
+            width: 80%;
+        }
+    }
+
+
+
+
+    .about-me-page {
+        max-width: 90%;
+
+        .about-me-page-title {
+            margin-top: 40%;
+            font-size: 2em;
+        }
+
+        .about-me-page-text {
+            margin-top: 10%;
+            width: 70%;
+        }
+    }
+
+
+
+    .icons-page {
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .icons-items {
+            margin-top: 20%;
+            margin-bottom: 20%;
+
+            .icons-text {
+                margin-left: 8%;
+            }
+
+            .icons-title {
+                font-size: 0.6em;
+                margin-bottom: 5%;
+            }
+
+            .icons-under-title {
+                font-size: 0.7em;
+            }
+
+            .icons-items img {
+                width: 30%;
+                height: 70%;
+            }
+        }
+    }
+
+
+
+    .my-works-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+        max-width: 90%;
+
+        .my-works-title {
+            font-size: 2em;
+        }
+
+        .my-works-text {
+            width: 70%;
+        }
+    }
+
+
+
+    .footer-page {
+        max-width: 90%;
+
+        .footer-title {
+            font-size: 1.3em;
+        }
+
+        .footer-text {
+            font-size: 0.8em;
+        }
+    }
+
+
+}
+
+@media (max-width: 711px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+    }
+
+    .icons-page {
+        .icons-items img {
+            width: 40%;
+            height: 80%;
+        }
+    }
+}
