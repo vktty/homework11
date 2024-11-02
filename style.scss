@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'roboto';
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(./fonts/Roboto-Regular.ttf);
 }
 
 $main-color-1: #727272;
@@ -19,7 +19,7 @@ $main-color-2: #34547A;
 }
 
 .main-bg {
-    background: url(images/1.png);
+    background: url(./images/1.png);
     padding-top: 80px;
     padding-bottom: 140px;
 
@@ -106,7 +106,7 @@ $main-color-2: #34547A;
 }
 
 .icons-bg {
-    background: url(images/2.png);
+    background: url(./images/2.png);
 
     .icons-page {
         @include center-width();
@@ -141,7 +141,7 @@ $main-color-2: #34547A;
 }
 
 .my-works-bg {
-    background: url(images/4.png);
+    background: url(./images/4.png);
 
     .my-works-page {
         @include center-width();
@@ -167,7 +167,7 @@ $main-color-2: #34547A;
         .my-works-img {
             width: 100%;
             height: 600px;
-            background: url(images/video.png);
+            background: url(./images/video.png);
             margin-bottom: 100px;
             display: flex;
             justify-content: space-around;
@@ -182,7 +182,7 @@ $main-color-2: #34547A;
 }
 
 .footer-bg {
-    background: url(images/3.png);
+    background: url(./images/3.png);
 
     .footer-page {
         @include center-width();
