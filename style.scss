@@ -107,7 +107,6 @@ $main-color-2: #34547A;
 
 .icons-bg {
     background: url(images/2.png);
-
     .icons-page {
         @include center-width();
         display: flex;
